@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,9 +7,25 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
+      background: url('https://images.unsplash.com/photo-1520975916090-3105956cfd3d?auto=format&fit=crop&w=1650&q=80') no-repeat center center fixed;
+      background-size: cover;
       margin: 0;
       padding: 0;
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 15px;
+      text-align: center;
+    }
+    .navbar a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
     }
     .container {
       max-width: 900px;
@@ -18,29 +33,29 @@
       background: #fff;
       border-radius: 20px;
       padding: 40px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
       text-align: center;
     }
     h1 {
       font-size: 32px;
-      color: #222;
+      color: #000;
       margin-bottom: 10px;
     }
     .tagline {
       font-size: 16px;
-      color: #666;
+      color: #444;
       font-style: italic;
       margin-bottom: 30px;
     }
     h2 {
       font-size: 20px;
-      color: #444;
+      color: #111;
       margin-bottom: 20px;
     }
     .price {
       font-size: 18px;
       margin-bottom: 30px;
-      color: #333;
+      color: #111;
     }
     .product-img {
       max-width: 100%;
@@ -63,17 +78,53 @@
     .btn:hover {
       background-color: #c74800;
     }
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #111;
+    }
+    .section p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #222;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 <body>
+  <div class="navbar">
+    <a href="#">Главная</a>
+    <a href="#about">О нас</a>
+    <a href="#contacts">Контакты</a>
+  </div>
   <div class="container">
-    <img src="logo.png" alt="FlexCrude Logo" class="logo">
+    <img src="https://chat.openai.com/mnt/data/file_00000000333861f7a624012734f47b4c.png" alt="FlexCrude Logo" class="logo">
     <h1>FlexCrude — ПОЛИЭТИЛЕНОВАЯ УПАКОВКА</h1>
     <div class="tagline">Из глубины ископаемого — в упаковку будущего</div>
     <h2>НАПРЯМУЮ ОТ ПРОИЗВОДИТЕЛЯ</h2>
     <div class="price">Цены от <strong>$2.15/кг</strong>, минимальный заказ — от <strong>10 кг</strong></div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Plastic_bags.jpg/640px-Plastic_bags.jpg" alt="polyethylene products" class="product-img">
     <a href="mailto:yourname@example.com?subject=Заказ%20образца" class="btn">ПОЛУЧИТЬ ОБРАЗЕЦ</a>
+  </div>
+  <div class="section" id="about">
+    <h2>О нас</h2>
+    <p>FlexCrude — это канадско-украинский проект по поставке полиэтиленовой упаковки напрямую от производителя. Мы соединяем качество и гибкость, чтобы предложить бизнесу лучший продукт по справедливой цене. Основано на опыте переработки, логистики и экспорта.</p>
+  </div>
+  <div class="section" id="contacts">
+    <h2>Контакты</h2>
+    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a><br>
+    WhatsApp: <a href="https://wa.me/11234567890">+1 123 456 7890</a><br>
+    Instagram: <a href="https://instagram.com/flexcrude">@flexcrude</a></p>
   </div>
 </body>
 </html>
